@@ -19,7 +19,7 @@ myfavoritecoloris.blue
 
 # International domains are supported
 $ gleam run -m domain_puns heyみんな
-hey.みんな
+hey.みんな (hey.xn--q9jyb4c)
 ```
 
 ## Domains

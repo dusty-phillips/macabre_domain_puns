@@ -3,7 +3,7 @@
 import gleam/string
 
 /// Prefix for punycode internationalized domains.
-const prefix: String = "xn--"
+pub const prefix: String = "xn--"
 
 /// Checks if a domain string is a punycode domain. If it is, it returns the punycode
 /// string with the leading prefix for internationalized domains removed.
