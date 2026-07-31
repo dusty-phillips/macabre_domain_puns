@@ -12,11 +12,15 @@ pub fn suggestions_test() {
   let name = "myfavoritecolorisblue"
 
   assert domain_puns.suggestions(domains, name)
-    == ["myfavoritecoloris.blue", "myfavoritecolorisblu.e"]
+    == [
+      domain_puns.Standard("myfavoritecoloris.blue"),
+      domain_puns.Standard("myfavoritecolorisblu.e"),
+    ]
 }
 
 pub fn suggestions_punycode_test() {
   let name = "heyみんな"
 
-  assert domain_puns.suggestions(domains, name) == ["hey.みんな"]
+  assert domain_puns.suggestions(domains, name)
+    == [domain_puns.Punycode("hey.xn--q9jyb4c", "hey.みんな")]
 }
