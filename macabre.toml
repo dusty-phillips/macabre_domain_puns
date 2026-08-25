@@ -2,7 +2,9 @@ name = "domain_puns"
 version = "2.0.0"
 
 [dependencies]
+argv = { git = "git@github.com:dusty-phillips/macabre_argv.git", ref = "main" }
 gleam_stdlib = { git = "git@github.com:dusty-phillips/macabre_stdlib.git", ref = "main" }
+glidna = ">= 1.0.0 and < 2.0.0"
 
 [dev-dependencies]
 gleeunit = { git = "git@github.com:dusty-phillips/macabre_gleeunit.git", ref = "main" }
